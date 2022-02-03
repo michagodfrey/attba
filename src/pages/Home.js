@@ -5,18 +5,54 @@ const Home = () => {
     <main>
       <div className="container">
         <h1>home</h1>
-        <p>
-          Jelly sweet roll jelly beans biscuit pie macaroon chocolate donut.
-          Carrot cake caramels pie sweet apple pie tiramisu carrot cake.
-          Marzipan marshmallow croissant tootsie roll lollipop. Cupcake lemon
-          drops bear claw gummies. Jelly bear claw gummi bears lollipop cotton
-          candy gummi bears chocolate bar cake cookie. Cupcake muffin danish
-          muffin cookie gummies. Jelly beans tiramisu pudding. Toffee soufflé
-          chocolate cake pastry brownie. Oat cake halvah sweet roll cotton candy
-          croissant lollipop. Macaroon tiramisu chocolate bar candy candy carrot
-          cake jelly sweet. Gummies croissant macaroon dessert. Chocolate cake
-          dragée pie.
-        </p>
+        <form className="form">
+          <div className="form__control">
+            <label className="" for="produce">
+              Produce
+            </label>
+            <input id="produce" type="text" />
+          </div>
+
+          <div className="form__control">
+            <label className="" for="origin">
+              Origin
+            </label>
+            <select className="" id="origin">
+              <option value="" selected hidden>
+                Where is it from?
+              </option>
+              <option value="NSW">New South Wales (&amp; ACT)</option>
+              <option value="NT">Northern Territory</option>
+              <option value="QLD">Queensland</option>
+              <option value="SA">South Australia</option>
+              <option value="TAS">Tasmania</option>
+              <option value="VIC">Victoria</option>
+              <option value="WA">Western Australia</option>
+            </select>
+          </div>
+
+          <div className="form__control">
+            <label for="destination">
+              Destination
+            </label>
+            <select id="destination">
+              <option value="" selected hidden>
+                Where is it going?
+              </option>
+              <option value="NSW">New South Wales (&amp; ACT)</option>
+              <option value="NT">Northern Territory</option>
+              <option value="QLD">Queensland</option>
+              <option value="SA">South Australia</option>
+              <option value="TAS">Tasmania</option>
+              <option value="VIC">Victoria</option>
+              <option value="WA">Western Australia</option>
+            </select>
+          </div>
+
+          <button id="button" type="button">
+            Find out what rules apply
+          </button>
+        </form>
       </div>
     </main>
   ); 

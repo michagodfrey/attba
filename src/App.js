@@ -9,6 +9,7 @@ import Resources from "./pages/Resources";
 import Error from "./pages/Error";
 // components
 import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 
 const App = () => {
   return (
@@ -31,6 +32,7 @@ const App = () => {
           <Error />
         </Route>
       </Switch>
+      <Footer />
     </Router>
   );
 };

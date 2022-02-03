@@ -1,19 +1,18 @@
 import React from "react";
+import questions from "../data/questions";
+import Question from "../components/Question";
 
 const About = () => {
+  
   return (
     <main>
       <div className="container">
-        <h1>About</h1>
-        <p>
-          Next level tbh everyday carry, blog copper mug forage kitsch roof
-          party pickled hammock kale chips tofu. Etsy shoreditch 8-bit
-          microdosing, XOXO viral butcher banh mi humblebrag listicle woke
-          bicycle rights brunch before they sold out ramps. Twee shabby chic
-          taiyaki flannel, enamel pin venmo vape four loko. Hexagon kale chips
-          typewriter kitsch 8-bit organic plaid small batch keffiyeh ethical
-          banh mi narwhal echo park cronut.
-        </p>
+        <h2>Australian Travel &amp; Trade Biosecurity Assistant</h2>
+        <div>
+          {questions.map((question) => {
+            return <Question key={question.id} {...question} />;
+          })}
+        </div>
       </div>
     </main>
   );
