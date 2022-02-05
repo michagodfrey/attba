@@ -6,7 +6,7 @@ const About = () => {
   
   return (
     <main>
-      <div className="container">
+      <div className="container container--about">
         <h2>Australian Travel &amp; Trade Biosecurity Assistant</h2>
         <div>
           {questions.map((question) => {

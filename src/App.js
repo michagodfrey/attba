@@ -6,6 +6,7 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import Pests from "./pages/Pests";
 import Resources from "./pages/Resources";
+import Contact from "./pages/Contact";
 import Error from "./pages/Error";
 // components
 import Navbar from "./components/Navbar";
@@ -27,6 +28,9 @@ const App = () => {
         </Route>
         <Route path="/resources">
           <Resources />
+        </Route>
+        <Route path="/contact">
+          <Contact />
         </Route>
         <Route path="*">
           <Error />

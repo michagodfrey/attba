@@ -12,17 +12,20 @@ Variables
     --clr-verdantgreen: #2C5F2D;
     --clr-darkverdantgreen: #091309;
     --clr-brown: #4F2C1D;
+    --clr-btn-default: #0000ff;
+    --clr-btn-default-hover: #4d4dff;
     /* container styles */
     --max-width: 1200px;
     --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-    --border-radius: var(0.25rem);
+    --radius: 0.25rem;
+    --btn-radius: 2.5rem;
     
 }
 
 /*
 =============== 
-Global Styles
+Elements
 ===============
 */
 
@@ -82,7 +85,6 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    
 }
 
 .container {
@@ -92,22 +94,48 @@ main {
     display: grid;
     background-color: var(--clr-mellowyellow);
     box-shadow: var(--dark-shadow);
-    border-radius: var(--border-radius);
-}
-
-.title--full {
-  margin-left: 1rem;
-  color: #f1f5f8;
-  display: none;
-}
-
-.title--acronym {
-  margin-left: 1rem;
-  color: #f1f5f8;
+    border-radius: var(--radius);
 }
 
 .btn { 
-    border-radius: var(--border-radius);
+  margin: 1rem auto;
+  padding: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  background-color: var(--clr-btn-default);
+  color: var(--clr-whitesmoke);
+  border-radius: var(--btn-radius);
+  transition: .4s ease-out;
+}
+
+.btn:hover {
+  background-color: var(--clr-btn-default-hover);
+}
+
+/*
+=============== 
+Add on Classes
+===============
+*/
+
+.centered {
+  margin: auto;
+}
+
+.center-content {
+  justify-content: center;
+}
+
+.row {
+  grid-template-columns: 500px 1fr;
+}
+
+.mb-2rem {
+  margin-bottom: 2rem;
+}
+
+.test {
+  
 }
 
 /*
@@ -137,6 +165,101 @@ Navbar component
     color: #fff;
 }
 
+.title--full {
+  margin-left: 1rem;
+  color: #f1f5f8;
+  display: none;
+}
+
+.title--acronym {
+  margin-left: 1rem;
+  color: #f1f5f8;
+}
+
+/*
+=============== 
+States component
+===============
+*/
+
+.svg {
+  min-width: 500px;
+  min-height: 430px;
+}
+
+#AU-NT {
+  fill: green;
+}
+
+#AU-WA {
+  fill: skyblue;
+}
+
+#AU-SA {
+  fill: orangered;
+}
+
+#AU-VIC {
+  fill: salmon;
+}
+
+#AU-TAS {
+  fill: blue;
+}
+
+#AU-NSW, #AU-ACT {
+  fill: greenyellow;
+}
+
+#AU-QLD {
+  fill: brown;
+}
+
+#AU-NT:hover, 
+#AU-QLD:hover,
+#AU-WA:hover,
+#AU-VIC:hover,
+#AU-NSW:hover,
+#AU-ACT:hover,
+#AU-SA:hover,
+#AU-TAS:hover {
+  fill: black;
+  cursor: pointer;
+}
+
+/*
+=============== 
+State modal component
+===============
+*/
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: grid;
+  place-items: center;
+  visibility: hidden;
+  
+}
+
+.show-modal {
+  z-index: 10;
+  visibility: visible;
+}
+
+.modal-container {
+  background: var(--clr-whitesmoke);
+  border-radius: var(--radius);
+  width: 90vw;
+  text-align: center;
+  place-items: center;
+  position: relative;
+}
+
 /*
 =============== 
 Form component
@@ -148,7 +271,7 @@ Form component
   margin-bottom: 4rem;
   padding: 1rem 2rem;
   background-color: var(--clr-whitesmoke);
-  border-radius: var(--border-radius);
+  border-radius: var(--radius);
 }
 
 .form__control {
@@ -164,7 +287,7 @@ Form component
 
 .form input {
   background: var(--clr);
-  border-radius: var(--border-radius);
+  border-radius: var(--radius);
   
 }
 
@@ -206,7 +329,7 @@ Questions component
     padding: 1rem;
     margin-bottom: 1rem;
     border: solid 1px var(--clr-grey);
-    border-radius: var(--border-radius);
+    border-radius: var(--radius);
     box-shadow: var(--light-shadow);
 }
 
@@ -227,17 +350,43 @@ Questions component
 
 /*
 =============== 
+Map component
+===============
+*/
+
+.mapouter {
+  position:relative;
+  text-align:right;
+  width:100%;
+  height:500px;
+}
+
+.gmap_canvas {
+  overflow:hidden;
+  background:none!important;
+  width:100%;
+  height:500px;
+}
+
+.gmap_iframe {
+  height:500px!important;
+}
+
+/*
+=============== 
 Media queries
 ===============
 */
 
 @media (min-width: 992px) {
     
-  /* global classes */
+  /* about */
     
-  .container {
-        grid-template-columns: 250px 1fr;
+  .container--about {
+      grid-template-columns: 250px 1fr;
     }
+
+    /* navbar */
 
   .title--acronym {
     display: none;
