@@ -1,9 +1,22 @@
 import React from 'react';
 import { useGlobalContext } from "../context";
+import states from "../data/states";
+
 
 const StateModal = () => {
-  const { isStateModalOpen, closeStateModal } = useGlobalContext();
+  const { isStateModalOpen, closeStateModal, modal } = useGlobalContext();
+  const [name, setName] = React.useState([]);
 
+
+  const getStateData = () => {
+    states.map((state) => {
+      if (state.id === modal) {
+        setName(state.name);
+      }
+      console.log(name);
+    })
+  }
+  
   return (
     <div
       className={`${
@@ -11,8 +24,11 @@ const StateModal = () => {
       }`}
     >
       <div className="modal-container">
-        <h1>title</h1>
-        <button onClick={closeStateModal}>button</button>
+        <h1>1</h1>
+        <p>2</p>
+        <p>3</p>
+        <button onClick={closeStateModal}>close</button>
+        <button onClick={getStateData}>console log</button>
       </div>
     </div>
   );

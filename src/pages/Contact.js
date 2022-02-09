@@ -1,30 +1,32 @@
 import React from 'react';
 import States from "../components/States";
-import { useGlobalContext } from '../context';
 import StateModal from '../components/StateModal';
 
 const Contact = () => {
-
-  const { openStateModal } = useGlobalContext();
-
+  
   return (
     <main>
       <StateModal />
       <div className="container row">
-        <States />
+        <div className="states-container">
+          <States />
+        </div>
         <div className="test">
           <h2>Intrastate biosecurity in Australia</h2>
+          <h4>Click on each state to get an overview of that state's rules.</h4>
           <p>
-            Zombie ipsum reversus ab viral inferno, nam rick grimes malum
-            cerebro. De carne lumbering animata corpora quaeritis. Summus brains
-            sit morbo vel maleficia? De apocalypsi gorger omero undead survivor
-            dictum mauris. Hi mindless mortuis soulless creaturas, imo evil
-            stalking monstra adventus resi dentevil vultus comedat cerebella
-            viventium. Qui animated corpse, cricket bat max brucks terribilem
-            incessu zomby. The voodoo sacerdos flesh eater, suscitat mortuos
-            comedere carnem virus. Zonbi tattered for solum oculi eorum
-            defunctis go lum cerebro. Nescio brains an Undead zombies. Sicut
-            malus putrid voodoo horror. Nigh tofth eliv ingdead.
+            Each state sets its own quarantine rules for imported plants and
+            plant products. The conditions for entry depends on what plant pests
+            and diseases the destination state is trying to keep out. For
+            example, you can move a bottle brush plant from Queensland to
+            Victora without any restrictions. But if you take that bottle brush
+            tree to South Australia without permission, you will be stopped at
+            the border and the plant would likely be confiscated and you'd
+            probably be fined too.
+          </p>
+          <p>
+            Use this site to help work out what you need to avoid fines and
+            other disruptions.
           </p>
         </div>
       </div>

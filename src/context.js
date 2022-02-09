@@ -3,10 +3,16 @@ import React, { useState, useContext } from "react";
 const AppContext = React.createContext();
 
 const AppProvider = ({ children }) => {
-    const [isStateModalOpen, setIsStateModalOpen] = useState(false);
+    // loading animation 
+    // const [isloading, setIsLoading] = useState(true);
 
-    const openStateModal = () => {
+    // open and close the modals
+    const [isStateModalOpen, setIsStateModalOpen] = useState(false);
+    const [modal, setModal] = useState("");
+
+    const openStateModal = (state) => {
         setIsStateModalOpen(true);
+        setModal(state);
     }
 
     const closeStateModal = () => {
@@ -14,7 +20,7 @@ const AppProvider = ({ children }) => {
     }
 
     return (
-      <AppContext.Provider value={{ isStateModalOpen, openStateModal, closeStateModal }}>
+      <AppContext.Provider value={{ isStateModalOpen, openStateModal, closeStateModal, modal }}>
           {children}
       </AppContext.Provider>
     );

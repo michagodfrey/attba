@@ -2,43 +2,43 @@ import React from "react";
 
 const states = [
     {
-        id: 1,
+        id: "QLD",
         name: "Queensland",
         border: "unmonitored",
         department: "Department of Agriculture and Fisheries",
     },
     {
-        id: 2,
+        id: "NSW",
         name: "New South Wales & ACT",
         border: "unmonitored",
         department: "Department of Primary Industries",
     },
     {
-        id: 3,
+        id: "VIC",
         name: "Victoria",
         border: "unmonitored",
         department: "Agriculture Victoria",
     },
     {
-        id: 4,
+        id: "TAS",
         name: "Tasmania",
         border: "monitored",
         department: "Department of Natural Resources and Environment Tasmania",
     },
     {
-        id: 5,
+        id: "SA",
         name: "South Australia",
         border: "monitored",
         department: "Department of Primary Industries and Regions",
     },
     {
-        id: 6,
+        id: "NT",
         name: "Northern Territory",
         border: "unmonitored",
         department: "Department of Industry, Tourism and Trade",
     },
     {
-        id: 7,
+        id: "WA",
         name: "Western Australia",
         border: "monitored",
         department: "Department of Primary Industries and Regional Development",

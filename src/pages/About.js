@@ -6,8 +6,9 @@ const About = () => {
   
   return (
     <main>
+
       <div className="container container--about">
-        <h2>Australian Travel &amp; Trade Biosecurity Assistant</h2>
+        <h2>How to find quarantine controls for plants and plant products.</h2>
         <div>
           {questions.map((question) => {
             return <Question key={question.id} {...question} />;

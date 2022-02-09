@@ -9,11 +9,13 @@ Variables
     --clr-whitesmoke: #f5f5f5;
     --clr-grey: #777;
     --clr-mellowyellow: #FFE77A;
+    --clr-darkmellowyellow: #665c31;
     --clr-verdantgreen: #2C5F2D;
     --clr-darkverdantgreen: #091309;
     --clr-brown: #4F2C1D;
-    --clr-btn-default: #0000ff;
-    --clr-btn-default-hover: #4d4dff;
+    --clr-btn-default: #567f57;
+    --clr-btn-default-hover: #234c24;
+    --clr-external-link-hover: #b3a255;
     /* container styles */
     --max-width: 1200px;
     --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
@@ -95,11 +97,12 @@ main {
     background-color: var(--clr-mellowyellow);
     box-shadow: var(--dark-shadow);
     border-radius: var(--radius);
+    margin-bottom: 8rem;
 }
 
 .btn { 
   margin: 1rem auto;
-  padding: 1rem;
+  padding: .75rem 2rem;
   font-weight: bold;
   text-transform: uppercase;
   background-color: var(--clr-btn-default);
@@ -110,6 +113,20 @@ main {
 
 .btn:hover {
   background-color: var(--clr-btn-default-hover);
+}
+
+.external-link {
+  background-color: var(--clr-darkmellowyellow);
+  color: var(--clr-whitesmoke);
+  font-size: x-large;
+  text-transform: capitalize;
+  border-radius: var(--radius);
+  box-shadow: var(--light-shadow);
+  text-align: center;
+}
+
+.external-link:hover {
+  background-color: var(--clr-external-link-hover);
 }
 
 /*
@@ -134,8 +151,8 @@ Add on Classes
   margin-bottom: 2rem;
 }
 
-.test {
-  
+.bold {
+  font-weight: 700;
 }
 
 /*
@@ -154,9 +171,7 @@ Navbar component
 }
 
 .nav__links {
-    display: flex;
-    flex-direction: row;
-    padding: 1rem;
+    display: none;
    
 }
 
@@ -187,34 +202,6 @@ States component
   min-height: 430px;
 }
 
-#AU-NT {
-  fill: green;
-}
-
-#AU-WA {
-  fill: skyblue;
-}
-
-#AU-SA {
-  fill: orangered;
-}
-
-#AU-VIC {
-  fill: salmon;
-}
-
-#AU-TAS {
-  fill: blue;
-}
-
-#AU-NSW, #AU-ACT {
-  fill: greenyellow;
-}
-
-#AU-QLD {
-  fill: brown;
-}
-
 #AU-NT:hover, 
 #AU-QLD:hover,
 #AU-WA:hover,
@@ -223,7 +210,7 @@ States component
 #AU-ACT:hover,
 #AU-SA:hover,
 #AU-TAS:hover {
-  fill: black;
+  fill: white;
   cursor: pointer;
 }
 
@@ -232,6 +219,10 @@ States component
 State modal component
 ===============
 */
+
+.states-container {
+  display: none;
+}
 
 .modal-overlay {
   position: fixed;
@@ -262,6 +253,81 @@ State modal component
 
 /*
 =============== 
+Pests page
+===============
+*/
+
+.pests-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+/*
+=============== 
+Pest component
+===============
+*/
+
+.pest {
+  max-width: 300px;
+  margin: 1rem;
+  background-color: var(--clr-darkmellowyellow);
+  color: var(--clr-whitesmoke);
+  border-radius: var(--radius);
+  box-shadow: var(--light-shadow);
+}
+
+.pest__img-container {
+  max-width: 300px;
+}
+
+.pest__img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 0.25rem 0.25rem 0 0;
+}
+
+.pest__info-container {
+  text-align: center;
+}
+
+.pest__info-container, h4, h3 {
+  margin: 20px;
+  
+}
+
+/*
+=============== 
+PestDetail page
+===============
+*/
+
+.pest-detail {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.pest-detail__info-container {
+  text-align: left;
+  
+}
+
+.pest-detail__img-container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.pest-detail__img {
+  max-width: 100%;
+  height: auto;
+  border-radius: var(--radius);
+}
+
+/*
+=============== 
 Form component
 ===============
 */
@@ -281,18 +347,10 @@ Form component
   align-items: center;
 }
 
-.form label {
-
-}
-
 .form input {
   background: var(--clr);
   border-radius: var(--radius);
   
-}
-
-.form select {
-
 }
 
 .form button {
@@ -346,6 +404,7 @@ Questions component
   border-radius: 50%;
   display: flex;
   align-items: center;
+  cursor: pointer;
 }
 
 /*
@@ -378,6 +437,15 @@ Media queries
 ===============
 */
 
+@media (min-width: 600px) {
+  .nav__links {
+    display: flex;
+    flex-direction: row;
+    padding: 1rem;
+}
+
+}
+
 @media (min-width: 992px) {
     
   /* about */
@@ -393,6 +461,21 @@ Media queries
   }
 
   .title--full {
+    display: flex;
+  }
+
+  /* pest info */
+  .pest-detail {
+    grid-template-columns: 550px 1fr;
+  }
+
+  .pest-detail__info-container {
+    padding: 2rem;
+  }
+
+  /* states map */
+
+  .states-container {
     display: flex;
   }
 

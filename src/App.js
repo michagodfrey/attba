@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Pests from "./pages/Pests";
+import PestDetail from "./pages/PestDetail";
 import Resources from "./pages/Resources";
 import Contact from "./pages/Contact";
 import Error from "./pages/Error";
@@ -26,6 +27,7 @@ const App = () => {
         <Route path="/pests">
           <Pests />
         </Route>
+        <Route path="/pest/:id" children={<PestDetail />}></Route>
         <Route path="/resources">
           <Resources />
         </Route>

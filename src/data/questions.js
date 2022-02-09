@@ -2,24 +2,29 @@ import React from 'react';
 
 const questions = [
   {
+    id: 0,
+    question: "Step 0: Decide if quarantine rules apply to the product being exported/carried.",
+    answer: "The"
+  },
+  {
     id: 1,
-    question: "What is biosecurity",
-    answer: "At some point you have probably crossed an international or state border and asked to declare any plant or animal products you are carrying. Quarantine controls like this exist to prevent plant and animal pests spreading to new environments. Invasive pest species like fruit fly, animal diseases like foot and mouth disease and plant diseases like mrytle rust can establish in new locations causing significant environmental, economic and social damage.",
+    question: "Step 1: Find the quarantine rules for the destination state",
+    answer: "Each state has its own Plant Quarantine Manual (PQM) or something similar that decribes quarantine conditions for plants and plant products such as fruit or vegetables. These are available online either in PDF format or as web applications.",
   },
   {
     id: 2,
-    question: "Why do states have Biosecurity regulations?",
-    answer: "Australia is a big country with a diverse range environments and climates. There are areas separated by water or desert that are free of pests and diseases that are endemic in other parts of the country. For example, the island state of Tasmania is the only state in Australia without fruit fly. Similarly, pests and diseases that exist in the eastern states are often absent in Western Australia and vice versa.",
+    question: "Step 2: Find which quarantine rules apply to the plant/plant product at the destination state",
+    answer: "The PQM will declare what pests need to be controlled for depending on the type of plant product. For example, fresh fruit often needs to meet conditions for fruit fly and organic materials like hay may need to meet conditions for fire ants.",
   },
   {
     id: 3,
-    question: "How are biosecurity rules enforced?",
-    answer: "Each Australian state has laws about what plant, animal and earth (soil etc) products can enter and under what conditions. South Australia, Western Australia and Tasmania have quarantine controls at their borders with the other states. While the eastern states Queensland, New South Wales and Victoria do not monitor borders for plant/animal biosecurity, the rules still exist.",
+    question: "Step 3: Find out if the applicable pests are present at the origin",
+    answer: "Finaly, the quarantine rules mentioned in the PQM only apply if the plant product originates from an area that is known to have that pest. For example, fruit entering South Australia from Queensland needs a certificate because of fruit fly in that state. While fruit from Tasmania is exempt from needing the certificate because there is no known fruit fly in Tasmania. Biosecurity authorities in the origin state can issue certificates for export to other states.",
   },
   {
     id: 4,
-    question: "How do I know what I can take interstate?",
-    answer: "Helping you with this is Biosecurity Tip's Mission Statement! Feel free to use the form below to get some insight in where you can and cannot take fresh fruit to because of fuit fly. In some cases there are no restrictions, in others it is prohibited and sometimes it's possible but requires a permit or some other condition to be met.",
+    question: "I tried all that, but I couldn't find any rules or make sense of rules I did find :'(",
+    answer: "Don't worry, some things fall outside of the defined rules. And where rules do apply, they are hard to understand. Contact the destination state's quarantine authority to find out what you need to do export your product there.",
   },
 ]; 
 
