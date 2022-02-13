@@ -12,11 +12,13 @@ Variables
     --clr-darkmellowyellow: #665c31;
     --clr-verdantgreen: #2C5F2D;
     --clr-darkverdantgreen: #091309;
+    --clr-lightverdantgreen: #809f81;
     --clr-brown: #4F2C1D;
     --clr-btn-default: #567f57;
     --clr-btn-default-hover: #234c24;
     --clr-external-link-hover: #b3a255;
     /* container styles */
+    --full-width: 95vw;
     --max-width: 1200px;
     --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
@@ -85,13 +87,14 @@ Global Classes
 main {
     margin: 0 auto;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
 .container {
     padding: 1rem;
-    width: 95vw;
+    width: var(--full-width);
     max-width: var(--max-width);
     display: grid;
     background-color: var(--clr-mellowyellow);
@@ -113,6 +116,29 @@ main {
 
 .btn:hover {
   background-color: var(--clr-btn-default-hover);
+}
+
+/* generated with CSS Button Generator https://www.css3buttongenerator.com/ */
+.btn--secondary {
+  background: #FFE77A;;
+  background-image: -webkit-linear-gradient(top, #FFE77A #ccb962);
+  background-image: -moz-linear-gradient(top, #FFE77A #ccb962);
+  background-image: -ms-linear-gradient(top, #FFE77A #ccb962);
+  background-image: -o-linear-gradient(top, #FFE77A #ccb962);
+  background-image: linear-gradient(to bottom, #FFE77A #ccb962);
+  -webkit-border-radius: 30;
+  -moz-border-radius: 30;
+  border-radius: 30px;
+  color: #000;
+  font-size: 16px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+  margin: 1rem;
+}
+
+.btn-secondary:hover {
+  background: #ffec95;
+  text-decoration: none;
 }
 
 .external-link {
@@ -143,10 +169,6 @@ Add on Classes
   justify-content: center;
 }
 
-.row {
-  grid-template-columns: 500px 1fr;
-}
-
 .mb-2rem {
   margin-bottom: 2rem;
 }
@@ -167,17 +189,32 @@ Navbar component
     justify-content: space-between;
     max-width: var(--max-width);
     margin: 0 auto;
-    
 }
 
 .nav__links {
-    display: none;
-   
+  display: none; 
 }
 
 .nav__link a  {
-    padding: 0.5rem;
-    color: #fff;
+  padding: 0.5rem;
+  color: #fff;
+}
+
+.nav__menu-toggle {
+  display: flex;
+  margin: 2rem 1rem 1rem;
+  color: var(--clr-whitesmoke);
+  font-size: 150%;
+  cursor: pointer;
+}
+
+.nav__menu {
+  height: 0;
+  overflow: hidden;
+}
+
+.nav__menu--show {
+  height: 10rem;
 }
 
 .title--full {
@@ -216,7 +253,7 @@ States component
 
 /*
 =============== 
-State modal component
+StateModal component
 ===============
 */
 
@@ -243,14 +280,53 @@ State modal component
 }
 
 .modal-container {
-  background: var(--clr-whitesmoke);
+  background: var(--clr-lightverdantgreen);
   border-radius: var(--radius);
   width: 90vw;
+  max-width: var(--max-width);
   text-align: center;
   place-items: center;
   position: relative;
 }
 
+/*
+=============== 
+StatesList component
+===============
+*/
+
+.states-list-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.states-list {
+  /* to cancel dedault style */
+  padding-inline-start: 0;
+}
+
+/* generated with CSS Button Generator https://www.css3buttongenerator.com/ */
+.btn--state {
+  background: #567f57;
+  background-image: -webkit-linear-gradient(top, #567f57, #234c24);
+  background-image: -moz-linear-gradient(top, #567f57, #234c24);
+  background-image: -ms-linear-gradient(top, #567f57, #234c24);
+  background-image: -o-linear-gradient(top, #567f57, #234c24);
+  background-image: linear-gradient(to bottom, #567f57, #234c24);
+  -webkit-border-radius: 5;
+  -moz-border-radius: 5;
+  border-radius: 5px;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  border: solid #4F2C1D 2px;
+  margin-top: 1rem;
+  width: 100%;
+}
+
+.btn--state:hover {
+  background: #9ab29a;
+}
 /*
 =============== 
 Pests page
@@ -438,11 +514,30 @@ Media queries
 */
 
 @media (min-width: 600px) {
+
+  /* navbar */
   .nav__links {
     display: flex;
     flex-direction: row;
     padding: 1rem;
 }
+
+.nav__menu-toggle {
+  display: none;
+}
+
+  /* states map */
+ .states-container {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+  }
+
+  /* states list */
+
+  .states-list-container {
+    display: none;
+  }
 
 }
 
@@ -473,10 +568,10 @@ Media queries
     padding: 2rem;
   }
 
-  /* states map */
+  /* add on styles */
 
-  .states-container {
-    display: flex;
-  }
+  .grid-columns {
+  grid-template-columns: 500px 1fr;
+}
 
 }

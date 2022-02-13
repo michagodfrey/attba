@@ -28,6 +28,18 @@ const PestDetail = () => {
     
   }, [id])
 
+  let getPest = [];
+
+  pests.map((pest) => {
+    if (pest.id === parseInt(id)) {
+      getPest = {...pest};
+    }
+  })
+
+  // function test() {
+  //   console.log(getPest)
+  // }
+
   return (
     <main>
       <div className="container">
@@ -59,6 +71,7 @@ const PestDetail = () => {
           <Link to="/pests" className="btn">
             back
           </Link>
+          {/* <button onClick={test}>click</button> */}
         </div>
       </div>
     </main>

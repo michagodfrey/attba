@@ -1,32 +1,44 @@
 import React from 'react';
 import States from "../components/States";
 import StateModal from '../components/StateModal';
+import states from "../data/states";
+import { useGlobalContext } from "../context";
+import StatesList from '../components/StatesList';
 
 const Contact = () => {
+
+  const { modal } = useGlobalContext();
+  let getState = [];
+
+  states.map((state) => {
+    if (state.id === modal) {
+      getState = {...state};
+    }
+  })
   
   return (
     <main>
-      <StateModal />
-      <div className="container row">
+      <StateModal {...getState} />
+      <div className="container grid-columns">
         <div className="states-container">
+          <h3>click on a state to view more</h3>
           <States />
         </div>
-        <div className="test">
+        <StatesList />
+        <div>
           <h2>Intrastate biosecurity in Australia</h2>
-          <h4>Click on each state to get an overview of that state's rules.</h4>
           <p>
             Each state sets its own quarantine rules for imported plants and
-            plant products. The conditions for entry depends on what plant pests
-            and diseases the destination state is trying to keep out. For
-            example, you can move a bottle brush plant from Queensland to
-            Victora without any restrictions. But if you take that bottle brush
-            tree to South Australia without permission, you will be stopped at
-            the border and the plant would likely be confiscated and you'd
-            probably be fined too.
+            plant products. There may be conditions for entry of fruit,
+            vegetables, nursery plants, seeds etc.
           </p>
           <p>
-            Use this site to help work out what you need to avoid fines and
-            other disruptions.
+            The state borders of Western Australia, South Australian and
+            Tasmania are monitored by biosecurity staff.
+          </p>
+          <p>
+            Contact the biosecurity authority in the destination state to check
+            the entry conditions of your commodity.
           </p>
         </div>
       </div>
