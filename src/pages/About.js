@@ -28,17 +28,24 @@ const About = () => {
         <div>
           <h2>Intrastate biosecurity in Australia</h2>
           <p>
-            Each state sets its own quarantine rules for imported plants and
-            plant products. There may be conditions for entry of fruit,
-            vegetables, nursery plants, seeds etc.
+            Here biosecurity refers to protection of plants and animals from pests and diseases.
+            While this generally does not involve human health, 
+            preventing the spread of plant and animal pests/diseaese has economic,
+            environmental and social benefits.  
           </p>
           <p>
-            The state borders of Western Australia, South Australian and
-            Tasmania are monitored by biosecurity staff.
+            As an Island, Australia has a natural advantage to keep unwanted organisms out of the country. 
+            However, Australia is a large country with ecosystems isolated from each other by desert or water.
+            So just as there are quaratine rules and checks at the Australian border, 
+            each Australian state has its own biosecurity laws.
           </p>
           <p>
             Contact the biosecurity authority in the destination state to check
             the entry conditions of your commodity.
+          </p>
+          <p>
+            Some states have monitored borders. That is, there are checkpoints at the border
+            to inspect and/or check the certification of organic products entering the state. 
           </p>
         </div>
       </div>

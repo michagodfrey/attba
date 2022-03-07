@@ -4,7 +4,6 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 // pages
 import Home from "./pages/Home";
 import About from "./pages/About";
-import Import from "./pages/Import";
 import Export from "./pages/Export";
 import Pests from "./pages/Pests";
 import PestDetail from "./pages/PestDetail";
@@ -24,9 +23,6 @@ const App = () => {
         <Route path="/about">
           <About />
         </Route>
-        <Route path="/import">
-          <Import />
-        </Route>
         <Route path="/export">
           <Export />
         </Route>
@@ -38,7 +34,7 @@ const App = () => {
           <Error />
         </Route>
       </Switch>
-      {/* <Footer /> */}
+      <Footer />
     </Router>
   );
 };

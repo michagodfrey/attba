@@ -1,0 +1,166 @@
+/*
+=============== 
+States component
+===============
+*/
+
+.svg {
+  min-width: 500px;
+  min-height: 430px;
+}
+
+#AU-NT:hover,
+#AU-QLD:hover,
+#AU-WA:hover,
+#AU-VIC:hover,
+#AU-NSW:hover,
+#AU-ACT:hover,
+#AU-SA:hover,
+#AU-TAS:hover {
+  fill: white;
+  cursor: pointer;
+}
+
+/*
+=============== 
+StateModal component
+===============
+*/
+
+.states-container {
+  display: none;
+}
+
+@media (min-width: 600px) {
+  .states-container {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+  }
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: grid;
+  place-items: center;
+  visibility: hidden;
+}
+
+.show-modal {
+  z-index: 10;
+  visibility: visible;
+}
+
+.modal-container {
+  background: var(--clr-lightverdantgreen);
+  border-radius: var(--radius);
+  width: 90vw;
+  max-width: var(--max-width);
+  text-align: center;
+  place-items: center;
+  position: relative;
+}
+
+/*
+=============== 
+StatesList component
+===============
+*/
+
+.states-list-container {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 600px) {
+  .states-list-container {
+    display: none;
+  }
+}
+
+.states-list {
+  /* to cancel dedault style */
+  padding-inline-start: 0;
+}
+
+/* generated with CSS Button Generator https://www.css3buttongenerator.com/ */
+.btn--state {
+  background: #567f57;
+  background-image: -webkit-linear-gradient(top, #567f57, #234c24);
+  background-image: -moz-linear-gradient(top, #567f57, #234c24);
+  background-image: -ms-linear-gradient(top, #567f57, #234c24);
+  background-image: -o-linear-gradient(top, #567f57, #234c24);
+  background-image: linear-gradient(to bottom, #567f57, #234c24);
+  -webkit-border-radius: 5;
+  -moz-border-radius: 5;
+  border-radius: 5px;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  border: solid #4f2c1d 2px;
+  margin-top: 1rem;
+  width: 100%;
+}
+
+.btn--state:hover {
+  background: #9ab29a;
+}
+
+/*
+=============== 
+Questions component
+===============
+*/
+
+.question {
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border: solid 1px var(--clr-grey);
+  border-radius: var(--radius);
+  box-shadow: var(--light-shadow);
+}
+
+.question__title {
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn--question {
+  width: 2rem;
+  height: 2rem;
+  color: var(--clr-brown);
+  border: 2px solid var(--clr-brown);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+/*
+=============== 
+Map component
+===============
+*/
+
+.mapouter {
+  position: relative;
+  text-align: right;
+  width: 100%;
+  height: 500px;
+}
+
+.gmap_canvas {
+  overflow: hidden;
+  background: none !important;
+  width: 100%;
+  height: 500px;
+}
+
+.gmap_iframe {
+  height: 500px !important;
+}

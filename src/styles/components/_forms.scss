@@ -1,0 +1,31 @@
+/*
+=============== 
+Form component
+===============
+*/
+
+.form {
+  margin: 0 auto;
+  margin-bottom: 4rem;
+  padding: 1rem 2rem;
+  background-color: var(--clr-whitesmoke);
+  border-radius: var(--radius);
+}
+
+.form__control {
+  margin: 0.5rem 0;
+  display: grid;
+  grid-template-columns: 100px 1fr;
+  align-items: center;
+}
+
+.form input {
+  background: var(--clr);
+  border-radius: var(--radius);
+}
+
+.form button {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}

@@ -1,0 +1,80 @@
+/*
+=============== 
+Navbar component
+===============
+*/
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+.title--full {
+  margin-left: 1rem;
+  color: #f1f5f8;
+  display: none;
+}
+
+.title--acronym {
+  margin-left: 1rem;
+  color: #f1f5f8;
+}
+
+.nav__menu {
+  /* display: flex; */
+  flex-direction: row-reverse;
+}
+
+.btn--toggle {
+  display: flex;
+  margin: 2rem 1rem 1rem;
+  font-size: 150%;
+  cursor: pointer;
+  height: 2rem;
+  /* position: fixed;
+  right: 0; */
+}
+
+.links-container {
+  transition: var(--transition);
+}
+
+@media (min-width: 600px) {
+    .links {
+    display: flex;
+    flex-direction: row;
+    padding: 1rem;
+    margin-bottom: 0;
+  }
+
+  .btn--toggle {
+    display: none;
+  }
+
+  .nav__links--widescreen {
+    display: flex;
+  }
+}
+
+@media (min-width: 992px) {
+    .title--acronym {
+    display: none;
+  }
+
+  .title--full {
+    display: flex;
+  }
+}
+
+/*
+=============== 
+Links component
+===============
+*/
+
+.link {
+  padding: 0.25rem 1rem;
+}

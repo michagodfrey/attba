@@ -1,0 +1,75 @@
+* {
+  box-sizing: border-box;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,700;1,300&display=swap");
+
+body {
+  font-family: "Ubuntu", sans-serif;
+  line-height: 1.5;
+  font-size: 1rem;
+  background-color: #6b8f6c;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+main {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/*
+=============== 
+Footer component
+===============
+*/
+
+footer {
+  margin-top: 3rem;
+  padding: 2rem;
+  text-align: center;
+  background-color: var(--clr-darkverdantgreen);
+  color: #fff;
+  height: 5rem;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+
+/*
+=============== 
+Add on Classes
+===============
+*/
+
+.centered {
+  margin: auto;
+}
+
+.center-content {
+  justify-content: center;
+}
+
+.mb-2rem {
+  margin-bottom: 2rem;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+@media (min-width: 992px) {
+    .grid-columns {
+    grid-template-columns: 500px 1fr;
+  }
+}

@@ -1,0 +1,26 @@
+// =============================================
+//                   Variables                  
+// ============================================= 
+
+:root {
+  /* colors */
+  --clr-whitesmoke: #f5f5f5;
+  --clr-grey: #777;
+  --clr-mellowyellow: #ffe77a;
+  --clr-darkmellowyellow: #665c31;
+  --clr-verdantgreen: #2c5f2d;
+  --clr-darkverdantgreen: #091309;
+  --clr-lightverdantgreen: #809f81;
+  --clr-brown: #4f2c1d;
+  --clr-btn-default: #567f57;
+  --clr-btn-default-hover: #234c24;
+  --clr-external-link-hover: #b3a255;
+  /* container styles */
+  --full-width: 95vw;
+  --max-width: 1200px;
+  --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  --radius: 0.25rem;
+  --btn-radius: 2.5rem;
+  --transition: all 0.3s linear;
+}
