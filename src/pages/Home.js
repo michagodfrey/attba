@@ -10,7 +10,6 @@ const Home = () => {
         <Form />
         <Map />
       </div>
-      
     </main>
   ); 
 };

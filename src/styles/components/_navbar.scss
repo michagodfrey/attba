@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap');
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: var(--full-width);
+  max-width: var(--max-width);
+  margin: 1.5rem auto;
+  background-color: var(--clr-verdantgreen);
+}
+
+.title--acronym {
+  color: #f1f5f8;
+}
+
+.title--acronym h1 {
+  font-family: 'Fugaz One', cursive;
+  font-size: 3rem;
+  margin: .5rem 0;
+  text-shadow: 2px 2px 0 #bcbcbc, 4px 4px 0 #9c9c9c;
+}
+
+.title--full {
+  color: #f1f5f8;
+  display: flex;
+  flex-direction: column;
+  padding: auto 0 auto 1rem;
+  display: none;
+}
+
+.title--full h1 {
+  font-family: 'Fugaz One', cursive;
+  margin-bottom: 0;
+  font-size: 3rem;
+  text-shadow: 2px 2px 0 #bcbcbc, 4px 4px 0 #9c9c9c;
+}
+
+.caption {
+  display: block;
+}
+
+.nav__menu {
+  display: grid;
+  place-content: center;
+}
+
+@media (min-width: 600px) {
+  .title--acronym {
+    display: none;
+  }
+
+  .title--full {
+    display: flex;
+  }
+}

@@ -3,8 +3,7 @@ import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 // pages
 import Home from "./pages/Home";
-import About from "./pages/About";
-import Export from "./pages/Export";
+import Regulations from "./pages/Regulations";
 import Pests from "./pages/Pests";
 import PestDetail from "./pages/PestDetail";
 import Error from "./pages/Error";
@@ -20,11 +19,8 @@ const App = () => {
         <Route exact path="/">
           <Home />
         </Route>
-        <Route path="/about">
-          <About />
-        </Route>
-        <Route path="/export">
-          <Export />
+        <Route path="/regulations">
+          <Regulations />
         </Route>
         <Route path="/pests">
           <Pests />

@@ -11,7 +11,7 @@ const Pests = () => {
           <p>
             A pest is a plant, animal or other organism that causes
             environmental, economic or social harm. This site focuses on
-            non-vertebrate pests, these are often insects, fungi, bacteria and
+            non-vertebrate pests, these are insects, fungi, bacteria and
             other micro-organisms.
           </p>
           <p>
