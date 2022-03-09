@@ -1,0 +1,30 @@
+.pest-detail {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+.pest-detail__info-container {
+  text-align: left;
+}
+
+.pest-detail__img-container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.pest-detail__img {
+  max-width: 100%;
+  height: auto;
+  border-radius: var(--radius);
+}
+
+@media (min-width: 992px) {
+  .pest-detail {
+    grid-template-columns: 550px 1fr;
+  }
+
+  .pest-detail__info-container {
+    padding: 2rem;
+  }
+}

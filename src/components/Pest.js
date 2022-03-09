@@ -5,10 +5,8 @@ const Pest = ({ id, image, name, acronym, type, location }) => {
 
     return (
       <div className="pest">
-        <div className="pest__img-container">
           <img src={image} alt={acronym} className="pest__img" />
-        </div>
-        <div className="pest__info-container">
+        <div className="pest__info">
           <h3>{name}</h3>
           <h4>Type: {type}</h4>
           <p>Location: {location}</p>

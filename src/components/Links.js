@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 
 const Links = () => {
   return (
-    <>
       <ul className="links">
         <Link to="/">
           <li className="link link--home">Home</li>
@@ -15,7 +14,7 @@ const Links = () => {
           <li className="link link--pest">Pests</li>
         </Link>
       </ul>
-    </>
   );
 };
+
 export default Links;

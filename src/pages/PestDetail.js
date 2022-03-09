@@ -36,10 +36,6 @@ const PestDetail = () => {
     }
   })
 
-  // function test() {
-  //   console.log(getPest)
-  // }
-
   return (
     <main>
       <div className="container">
@@ -68,10 +64,9 @@ const PestDetail = () => {
           <ExternalLink href={info} className="external-link">
             official information
           </ExternalLink>
-          <Link to="/pests" className="btn">
+          <Link to="/pests" className="btn--secondary">
             back
           </Link>
-          {/* <button onClick={test}>click</button> */}
         </div>
       </div>
     </main>

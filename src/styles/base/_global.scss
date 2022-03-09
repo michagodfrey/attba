@@ -7,7 +7,6 @@
   line-height: 1.5;
 }
 
-
 body {
   background-color: var(--clr-verdantgreen)
 }
@@ -36,24 +35,97 @@ main {
   align-items: center;
 }
 
-/*
-=============== 
-Footer component
-===============
-*/
-
-footer {
-  margin-top: 3rem;
-  padding: 2rem;
-  text-align: center;
-  background-color: var(--clr-darkverdantgreen);
-  color: #fff;
-  height: 5rem;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
+figcaption {  
+    color: var(--clr-whitesmoke);
+    background-color: var(--clr-verdantgreen);
+    margin-top: 0;
+    padding-left: 1rem;
+    position: absolute;
+    width: 100%;
+    transform: translateY(-1.8rem);
 }
 
+// =============================================
+//              Global classes
+// =============================================
+
+.content {
+  padding: 1rem;
+  width: var(--full-width);
+  max-width: var(--max-width);
+  background-color: var(--clr-mellowyellow);
+  box-shadow: var(--dark-shadow);
+  border-radius: var(--radius);
+}
+
+.image-container {
+  max-width: 100%;
+  height: auto;
+  margin: 0;
+  position: relative;
+}
+
+.card-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+.text-container {
+  padding: 1rem;
+  background-color: var(--clr-whitesmoke);
+  border-radius: var(--radius);
+  box-shadow: var(--dark-shadow);
+}
+
+.btn {
+  margin: 1rem auto;
+  padding: 0.75rem 2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  background-color: var(--clr-btn-default);
+  color: var(--clr-whitesmoke);
+  border-radius: var(--btn-radius);
+  transition: var(--transition);
+  &:hover {
+    background-color: var(--clr-btn-default-hover);
+  }
+}
+
+.btn--secondary {
+  margin: .5rem auto;
+  padding: 0.5rem 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  background-color: #ffe77a;
+  color: #000;
+  max-width: 150px;
+  border-radius: var(--btn-radius);
+  transition: var(--transition);
+  &:hover {
+    background-color: var(--clr-btn-default-hover);
+  }
+}
+
+.external-link {
+  background-color: var(--clr-darkmellowyellow);
+  color: var(--clr-whitesmoke);
+  font-size: x-large;
+  text-transform: capitalize;
+  border-radius: var(--radius);
+  box-shadow: var(--light-shadow);
+  text-align: center;
+  transition: var(--transition);
+  &:hover {
+    background-color: var(--clr-external-link-hover);
+  }
+}
+
+.content--full-width {
+  display: grid;
+  place-content: center;
+  
+}
 
 /*
 =============== 

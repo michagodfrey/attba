@@ -1,7 +1,7 @@
+import React from "react";
 import Links from "./Links";
 
 const Navbar = () => {
-  
   return (
     <nav className="nav">
       <div className="nav__title">

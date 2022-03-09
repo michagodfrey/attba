@@ -1,0 +1,57 @@
+.pest-text {
+    margin-bottom: 1rem;
+    grid-area: text;
+}
+
+.heliothis-img {
+    max-width: 100%;
+    grid-area: img;
+}
+
+.pests {
+    grid-area: pests;
+}
+
+@media (min-width: 600px) {
+    
+
+    .pest-text {
+        max-width: 75%;
+        margin: 0 auto 1rem auto;
+    }
+    
+    .heliothis-img {
+        margin: auto;
+        max-width: 500px;
+    }
+
+    .image-container figcaption {
+        max-width: 500px;
+    }
+}
+
+@media (min-width: 992px) {
+
+    .pest-info {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 1rem;
+        grid-template-areas: 
+            "text img"
+            "pests pests";
+    }
+
+    .pest-text {
+        max-width: 100%;
+        margin: 0;
+    }
+
+    .heliothis-img {
+        max-width: 100%;
+    }
+
+    .image-container figcaption {
+        max-width: 100%;
+    }
+}
+
