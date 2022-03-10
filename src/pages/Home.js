@@ -5,10 +5,9 @@ import Map from "../components/Map";
 const Home = () => {
   return (
     <main>
-      <div className="container">
+      <div className="content">
         <h1>home</h1>
         <Form />
-        <Map />
       </div>
     </main>
   ); 

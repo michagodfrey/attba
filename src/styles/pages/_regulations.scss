@@ -1,6 +1,48 @@
+.states-container {
+  display: none;
+  grid-area: map;
+}
+
+.regs-text {
+  grid-area: text;
+}
+
+.heliothis-img {
+  max-width: 100%;
+  box-shadow: var(--dark-shadow);
+  grid-area: img;
+}
+
+.state-border-img {
+  max-width: 100%;
+}
+
+@media (min-width: 600px) {
+
+  .states-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+  }
+
+  .heliothis-img {
+    margin: auto;
+    max-width: 500px;
+  }
+
+  .heliothis-caption {
+    max-width: 500px;
+  }
+}
+
 @media (min-width: 992px) {
 
-  .container--about {
-    grid-template-columns: 250px 1fr;
+  .heliothis-img {
+    max-width: 100%;
+  }
+
+  .heliothis-caption {
+    max-width: 100%;
   }
 }

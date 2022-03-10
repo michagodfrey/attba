@@ -1,7 +1,6 @@
 import React from 'react';
 import Pest from "../components/Pest";
 import pests from "../data/pests";
-import heilothis from "../images/heliothis.jpg";
 
 const Pests = () => {
   return (
@@ -26,11 +25,19 @@ const Pests = () => {
         </div>
         <div className="image-container">
           <img
-            className="heliothis-img"
-            src={heilothis}
-            alt="heliothis caterpillar"
+            className="fire-ant-map"
+            src={
+              "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Worldwide_distribution_records_of_Solenopsis_invicta.png/640px-Worldwide_distribution_records_of_Solenopsis_invicta.png"
+            }
+            alt="fire ant world distribution map"
           />
-          <figcaption>Caption</figcaption>
+          <figcaption className="map-caption">
+            World distribution of fire ant (<em>Solenopsis invicta</em>). 
+            Fire ant is a highly invasive ant species from South America and an exotic pest to Australia.
+            The red dots shown in Australia represent fire ant outbreaks in South East Queensland. 
+            The QLD government is attempting to contain and eradicate the pest, 
+            while other states have quarantine laws to reduce the risk of fire ant invasion. 
+          </figcaption>
         </div>
         <div className="card-container pests">
           {pests.map((pest) => {

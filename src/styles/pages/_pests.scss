@@ -3,31 +3,32 @@
     grid-area: text;
 }
 
-.heliothis-img {
-    max-width: 100%;
-    grid-area: img;
-}
-
 .pests {
     grid-area: pests;
 }
 
+.fire-ant-map {
+    max-width: 100%;
+    box-shadow: var(--dark-shadow);
+    grid-area: img;
+}
+
 @media (min-width: 600px) {
     
-
     .pest-text {
         max-width: 75%;
         margin: 0 auto 1rem auto;
     }
-    
-    .heliothis-img {
+
+    .fire-ant-map {
         margin: auto;
         max-width: 500px;
     }
-
-    .image-container figcaption {
+    
+    .map-caption {
         max-width: 500px;
     }
+    
 }
 
 @media (min-width: 992px) {
@@ -46,12 +47,13 @@
         margin: 0;
     }
 
-    .heliothis-img {
+    .fire-ant-map {
+        max-width: 100%
+    }
+    
+    .map-caption {
         max-width: 100%;
     }
 
-    .image-container figcaption {
-        max-width: 100%;
-    }
 }
 

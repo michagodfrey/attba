@@ -1,16 +1,29 @@
-# Getting Started with Create React App
+### Acknowledgements
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+# Image sources
 
-In the project directory, you can run:
+SVG Australia state map from svg from <https://mapsvg.com/maps/australia>
 
-### `npm start`
+Other SVG images are from various open source sites
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+All images sourced from wikimedia commons <https://commons.wikimedia.org/wiki/Main_Page>
 
-### Acknowledgements
+Heliothis: CSIRO, CC BY 3.0 <https://creativecommons.org/licenses/by/3.0>, via Wikimedia Commons
 
-Heliothis image: CSIRO, CC BY 3.0 https://creativecommons.org/licenses/by/3.0, via Wikimedia Commons
+Myrtle rust: John Tann from Mullumbimby, Australia, CC BY 2.0 <https://creativecommons.org/licenses/by/2.0>, via Wikimedia Commons
+
+Phylloxera: E. Vignes - La Nature - Revue des sciences, Public domain, via Wikimedia Commons
+
+Tomato potato psyllid: Whitney Cranshaw, Colorado State University, Bugwood.org, CC BY 3.0 US <https://creativecommons.org/licenses/by/3.0/us/deed.en>, via Wikimedia Commons
+
+Fire ant: Alexander Wild, CC0, via Wikimedia Commons
+
+Fire ant map: James Wetterer, CC BY 3.0 <https://creativecommons.org/licenses/by/3.0>, via Wikimedia Commons
+
+Fruit fly SVG: Benjamin Wilhelm, CC0, via Wikimedia Commons
+
+Fruit fly on mango: Tsaag Valren, CC BY-SA 4.0 <https://creativecommons.org/licenses/by-sa/4.0>, via Wikimedia Commons
+
+State border: Longhair, CC BY-SA 3.0 <https://creativecommons.org/licenses/by-sa/3.0>, via Wikimedia Commons

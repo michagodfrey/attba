@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 import { useGlobalContext } from "../context";
 
 const StateModal = ({ name, border, department, url }) => {
@@ -13,11 +13,14 @@ const StateModal = ({ name, border, department, url }) => {
       <div className="modal-container">
         <h1>{name}</h1>
         <p>Border: {border}</p>
-        <p>Biosecurity authority: {department}</p>
-        <p>
-          <a href={url} target="_blank">Link</a>
+        <p className="external-link">
+          <a href={url} target="_blank">
+            Biosecurity authority: {department}
+          </a>
         </p>
-        <button className="btn--secondary" onClick={closeStateModal}>Close</button>
+        <button className="btn--secondary" onClick={closeStateModal}>
+          Close
+        </button>
       </div>
     </div>
   );

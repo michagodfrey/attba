@@ -1,0 +1,33 @@
+.states-list-container {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 600px) {
+  .states-list-container {
+    display: none;
+  }
+}
+
+.states-list {
+  /* to cancel default style */
+  padding-inline-start: 0;
+}
+
+/* generated with CSS Button Generator https://www.css3buttongenerator.com/ */
+.btn--state {
+  background: #567f57;
+  background-image: linear-gradient(to bottom, #567f57, #234c24);
+  border-radius: 5px;
+  color: var(--clr-whitesmoke);
+  padding: .5rem 1rem;
+  border: solid var(--clr-brown) 2px;
+  margin-top: .75rem;
+  width: 100%;
+  cursor: pointer;
+  transition: var(--transition);
+  &:hover {
+    background: var(--clr-lightverdantgreen);
+  }
+}
+

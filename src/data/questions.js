@@ -4,7 +4,7 @@ const questions = [
   {
     id: 0,
     question: "Step 0: Decide if quarantine rules apply to the product being exported/carried.",
-    answer: "The"
+    answer: "The commodity you want to transport may not have any quarantine rules applied to them or only for certain states. Check the search feature on the home page to get some idea about this."
   },
   {
     id: 1,

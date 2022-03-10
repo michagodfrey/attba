@@ -1,6 +1,17 @@
 import React, { useState } from 'react';
 import { AiOutlineMinus, AiOutlinePlus } from "react-icons/ai";
 
+// to import the data on the regulatutions page
+// ensuring the questions and and Question has been imported
+
+{/* <div>
+  {questions.map((question) => {
+    return <Question key={question.id} {...question} />;
+  })}
+</div>; */}
+
+
+
 const Question = ({ question, answer }) => {
     const [show, setShow] = useState(false);
 

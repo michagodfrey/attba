@@ -38,7 +38,7 @@ const PestDetail = () => {
 
   return (
     <main>
-      <div className="container">
+      <div className="content">
         <h1>
           {name} ({acronym})
         </h1>
@@ -65,7 +65,7 @@ const PestDetail = () => {
             official information
           </ExternalLink>
           <Link to="/pests" className="btn--secondary">
-            back
+            close
           </Link>
         </div>
       </div>

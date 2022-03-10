@@ -4,8 +4,6 @@ import StateModal from "../components/StateModal";
 import states from "../data/states";
 import { useGlobalContext } from "../context";
 import StatesList from "../components/StatesList";
-import questions from "../data/questions";
-import Question from "../components/Question";
 
 const Regulations = () => {
 
@@ -21,13 +19,8 @@ const Regulations = () => {
   return (
     <main>
       <StateModal {...getState} />
-      <div className="container grid-columns">
-        <div className="states-container">
-          <h3>click on a state to view more</h3>
-          <States />
-        </div>
-        <StatesList />
-        <div>
+      <div className="content regs-grid">
+        <div className="text-container regs-text">
           <h2>Intrastate biosecurity in Australia</h2>
           <p>
             Here biosecurity refers to protection of plants and animals from
@@ -35,6 +28,19 @@ const Regulations = () => {
             health, preventing the spread of plant and animal pests/diseaese has
             economic, environmental and social benefits.
           </p>
+          <div className="image-container">
+            <img
+              className="heliothis-img"
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/CSIRO_ScienceImage_260_The_Cotton_Pest_Heliothis.jpg/640px-CSIRO_ScienceImage_260_The_Cotton_Pest_Heliothis.jpg"
+              alt="heliothis caterpillar"
+            />
+            <figcaption className="heliothis-caption">
+              Heliothis, a caterpillar that feeds on crops like corn and cotton.
+              It is a significant agricultural pest but since it is spread
+              throughout Australia, it is not targeted by local quarantine laws.
+              That is, it's an <em>endemic</em> pest.
+            </figcaption>
+          </div>
           <p>
             As an Island, Australia has a natural advantage to keep unwanted
             organisms out of the country. However, Australia is a large country
@@ -42,24 +48,31 @@ const Regulations = () => {
             as there are quaratine rules and checks at the Australian border,
             each Australian state has its own biosecurity laws.
           </p>
+          <div className="image-container">
+            <img
+              className="state-border-img"
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Welcome_to_Victoria.jpg/640px-Welcome_to_Victoria.jpg"
+              alt="fire ant world map"
+            />
+            <figcaption></figcaption>
+          </div>
+
           <p>
             Contact the biosecurity authority in the destination state to check
             the entry conditions of your commodity.
           </p>
+
           <p>
             Some states have monitored borders. That is, there are checkpoints
             at the border to inspect and/or check the certification of organic
             products entering the state.
           </p>
         </div>
-      </div>
-      <div className="container container--about">
-        <h2>How to find quarantine controls for plants and plant products.</h2>
-        <div>
-          {questions.map((question) => {
-            return <Question key={question.id} {...question} />;
-          })}
+        <div className="states-container">
+          <h3>click on a state to view more</h3>
+          <States />
         </div>
+        <StatesList />
       </div>
     </main>
   );

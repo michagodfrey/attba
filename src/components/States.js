@@ -4,7 +4,6 @@ import { useGlobalContext } from "../context";
 const States = () => {
 
    const { openStateModal } = useGlobalContext();
-
     
   return (
     //   svg from https://mapsvg.com/maps/australia

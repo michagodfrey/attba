@@ -5,12 +5,11 @@
   --clr-mellowyellow: #ffe77a;
   --clr-darkmellowyellow: #665c31;
   --clr-verdantgreen: #2c5f2d;
-  --clr-lightverdantgreen: #6b8f6c;
+  --clr-lightverdantgreen: #96af96;
   --clr-darkverdantgreen: #091309;
-  --clr-lightverdantgreen: #809f81;
   --clr-brown: #4f2c1d;
-  --clr-btn-default: #567f57;
-  --clr-btn-default-hover: #234c24;
+  --clr-btn: #567f57;
+  --clr-btn-hover: #234c24;
   --clr-external-link-hover: #b3a255;
   /* container styles */
   --full-width: 95vw;
@@ -18,6 +17,7 @@
   --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
   --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
   --radius: 0.25rem;
+  --btn-border: 2px solid var(--clr-mellowyellow);
   --btn-radius: 2.5rem;
-  --transition: all 0.3s linear;
+  --transition: background-color 0.3s linear;
 }

@@ -1,0 +1,23 @@
+.question {
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border: solid 1px var(--clr-grey);
+  border-radius: var(--radius);
+  box-shadow: var(--light-shadow);
+}
+
+.question__title {
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn--question {
+  width: 2rem;
+  height: 2rem;
+  color: var(--clr-brown);
+  border: 2px solid var(--clr-brown);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}

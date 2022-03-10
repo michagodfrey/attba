@@ -3,7 +3,7 @@ const Map = () => {
 
   return (
     // made with https://www.embedmymap.com/
-    <div className="content">
+    <div>
       <p>In future versions this map will be interactive with the search and also show quarantine zones.</p>
       <div class="mapouter">
         <div class="gmap_canvas">
