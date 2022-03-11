@@ -1,48 +1,61 @@
+.p-1 {
+  grid-area: para-1;
+  grid-column: 1 / 4;
+}
+
+.p-2 {
+  grid-area: para-2;
+  grid-column: 1 / 2;
+}
+
+.p-3 {
+  grid-area: para-3;
+  grid-column: 3 / 4;
+}
+
+.p-4 {
+  grid-area: para-4;
+  grid-column: 1 / 2;
+}
+
+.img-fruit-bin {
+  grid-area: img-1;
+  grid-column: 2 / 4;
+}
+
+.img-biosecurity-officer {
+  grid-area: img-2;
+  grid-column: 1 / 3;
+}
+
+.img-heliothis {
+  grid-area: img-3;
+  grid-column: 2 / 4;
+}
+
 .states-container {
   display: none;
-  grid-area: map;
-}
-
-.regs-text {
-  grid-area: text;
-}
-
-.heliothis-img {
-  max-width: 100%;
-  box-shadow: var(--dark-shadow);
-  grid-area: img;
-}
-
-.state-border-img {
-  max-width: 100%;
 }
 
 @media (min-width: 600px) {
-
   .states-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 0 auto;
   }
-
-  .heliothis-img {
-    margin: auto;
-    max-width: 500px;
-  }
-
-  .heliothis-caption {
-    max-width: 500px;
-  }
 }
 
-@media (min-width: 992px) {
+@media (min-width: 768px) {
 
-  .heliothis-img {
-    max-width: 100%;
-  }
-
-  .heliothis-caption {
-    max-width: 100%;
+  .regs-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem;
+    grid-template-areas: 
+      "para-1 para-1"
+      "para-2 img-1"
+      "img-2 para-3"
+      "para-4 img-3";
   }
 }

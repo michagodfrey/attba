@@ -8,8 +8,6 @@
 }
 
 .fire-ant-map {
-    max-width: 100%;
-    box-shadow: var(--dark-shadow);
     grid-area: img;
 }
 
@@ -22,10 +20,6 @@
 
     .fire-ant-map {
         margin: auto;
-        max-width: 500px;
-    }
-    
-    .map-caption {
         max-width: 500px;
     }
     

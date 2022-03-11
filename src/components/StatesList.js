@@ -6,7 +6,7 @@ const StatesList = () => {
 
   return (
     <div className="states-list-container">
-      <h3>click on a state to view more</h3>
+      <h4>click on a state to view more</h4>
       <ul className="states-list">
         <li className="btn--state" onClick={() => openStateModal("NSW")}>
           New South Wales &amp; ACT

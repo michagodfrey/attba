@@ -1,8 +1,8 @@
-### Acknowledgements
+# Acknowledgements
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-# Image sources
+### Image sources
 
 SVG Australia state map from svg from <https://mapsvg.com/maps/australia>
 
@@ -26,4 +26,6 @@ Fruit fly SVG: Benjamin Wilhelm, CC0, via Wikimedia Commons
 
 Fruit fly on mango: Tsaag Valren, CC BY-SA 4.0 <https://creativecommons.org/licenses/by-sa/4.0>, via Wikimedia Commons
 
-State border: Longhair, CC BY-SA 3.0 <https://creativecommons.org/licenses/by-sa/3.0>, via Wikimedia Commons
+Fruit fly disposal bin: Maksym Kozlenko, CC BY-SA 3.0 <https://creativecommons.org/licenses/by-sa/3.0>, via Wikimedia Commons
+
+U.S. Customs and Border Protection, Public domain, via Wikimedia Commons

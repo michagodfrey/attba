@@ -23,26 +23,36 @@ const Pests = () => {
             have entry restrictions for.
           </p>
         </div>
-        <div className="image-container">
+        <div className="image-container fire-ant-map">
           <img
-            className="fire-ant-map"
             src={
               "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Worldwide_distribution_records_of_Solenopsis_invicta.png/640px-Worldwide_distribution_records_of_Solenopsis_invicta.png"
             }
             alt="fire ant world distribution map"
           />
           <figcaption className="map-caption">
-            World distribution of fire ant (<em>Solenopsis invicta</em>). 
-            Fire ant is a highly invasive ant species from South America and an exotic pest to Australia.
-            The red dots shown in Australia represent fire ant outbreaks in South East Queensland. 
-            The QLD government is attempting to contain and eradicate the pest, 
-            while other states have quarantine laws to reduce the risk of fire ant invasion. 
+            World distribution of fire ant (<em>Solenopsis invicta</em>). Fire
+            ant is a highly invasive ant species from South America and an
+            exotic pest to Australia. The red dots shown in Australia represent
+            fire ant outbreaks in South East Queensland. The QLD government is
+            attempting to contain and eradicate the pest, while other states
+            have quarantine laws to reduce the risk of fire ant invasion.
           </figcaption>
         </div>
         <div className="card-container pests">
           {pests.map((pest) => {
             return <Pest key={pest.id} {...pest} />;
           })}
+        </div>
+        <div className="sub-heading">
+          <p>
+            <em>
+              Hi there! Thanks for looking around. Over time, I want to increase the list
+              of pests and include more information about them, like more
+              specific location, commodities impacted, and laws and regulations
+              concerned.
+            </em>
+          </p>
         </div>
       </div>
     </main>

@@ -18,15 +18,12 @@ const Footer = () => {
         </svg>
       </ExternalLink>
       <p>
-        This project is under construction. 
-        Click the GitHub icon to see its code.
+        This project is under construction. Click the GitHub icon to see its
+        code.
       </p>
       <p>
-        <strong>Disclaimer:</strong> This application is for informational
-        purposes. While every effort has been made to ensure the information is
-        correct and up to date, it cannot be gauranteed. State government
-        biosecurity departments at the destination state are the authority on
-        quarantine laws.
+        All information provided is based on official information
+        from state government sources.
       </p>
       <p>
         All images sourced from{" "}

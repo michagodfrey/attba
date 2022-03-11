@@ -54,6 +54,19 @@ const pests = [
     image:
       "https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Myrtle_Rust_on_Broad-leaved_Paperbark_%2848656135227%29.jpg/640px-Myrtle_Rust_on_Broad-leaved_Paperbark_%2848656135227%29.jpg",
   },
+  {
+    id: 5,
+    name: "More coming soon",
+    acronym: "-",
+    type: "various",
+    location: "various",
+    description:
+      "There are far more pests in Australia where quarantine laws apply. More will be added.",
+    hosts: "Plants, fruit, earth material etc.",
+    info: "https://www.awe.gov.au/biosecurity-trade/pests-diseases-weeds/plant",
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Drosophila_melanogaster_on_apples.jpg/640px-Drosophila_melanogaster_on_apples.jpg",
+  },
 ];
 
 export default pests;

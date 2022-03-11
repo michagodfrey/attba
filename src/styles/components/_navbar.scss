@@ -1,13 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap');
 
+header {
+  background-color: var(--clr-darkverdantgreen);
+}
+
 .nav {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  width: var(--full-width);
+  padding: 0 1rem 1rem;
   max-width: var(--max-width);
-  margin: 1.5rem auto;
-  background-color: var(--clr-verdantgreen);
+  margin: 0 auto 1rem;
 }
 
 .title--acronym {

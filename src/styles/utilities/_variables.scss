@@ -1,7 +1,6 @@
 :root {
   /* colors */
   --clr-whitesmoke: #f5f5f5;
-  --clr-grey: #777;
   --clr-mellowyellow: #ffe77a;
   --clr-darkmellowyellow: #665c31;
   --clr-verdantgreen: #2c5f2d;
@@ -17,7 +16,8 @@
   --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
   --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
   --radius: 0.25rem;
+  --transition: background-color 0.3s linear;
+  // buttons 
   --btn-border: 2px solid var(--clr-mellowyellow);
   --btn-radius: 2.5rem;
-  --transition: background-color 0.3s linear;
 }
