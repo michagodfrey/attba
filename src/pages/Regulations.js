@@ -58,8 +58,10 @@ const Regulations = () => {
                 alt="biosecurity professional looking through microscope"
               />
               <figcaption>
-                <strong>Biosecurity officer</strong> inspects fruit at a
-                checkpoint.
+                <strong> Biosecurity officer</strong> inspects fruit for signs of
+                pest damage or disease. Typical conditions for importing fresh
+                produce can include cerification (such as a permit to import)
+                and/or inspection by officials.
               </figcaption>
             </div>
             <p className="p-3">
@@ -90,7 +92,7 @@ const Regulations = () => {
               Contact the biosecurity authority in the destination state to
               check the entry conditions of your commodity. Some states have
               monitored borders with checkpoints to inspect organic goods for
-              pest infetation or the accompanying permits products entering the
+              pest infestation or the accompanying permits products entering the
               state.
             </p>
           </div>

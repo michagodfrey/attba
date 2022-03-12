@@ -1,0 +1,53 @@
+.list {
+    padding: 0;
+    max-width: 700px;
+    margin: auto;
+}
+
+.list__item {
+    background-color: var(--clr-whitesmoke);
+    padding: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 1rem 0;
+}
+
+.list__item .svg--tick {
+    flex: 1 1 30%;
+}
+
+.list__item span {
+    flex: 1 1 70%;
+}
+
+.svg--tick {
+    background-image: url("../images/tick.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    max-width: 3.3rem;
+    height: 3.3rem;
+    margin: 0 1rem 1rem 0;
+    
+}
+
+.svg--cross {
+    background-image: url("../images/cross.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 3.3rem;
+    height: 3.3rem;
+    margin: 0 1rem 1rem 0;
+}
+
+.svg--question-mark {
+    background-image: url("../images/question-mark.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 3.3rem;
+    height: 3.3rem;
+    margin: 0 1rem 1rem 0;
+}
+

@@ -1,25 +1,102 @@
-.form {
-  margin: 0 auto;
+form {
+  margin: 1rem auto;
   margin-bottom: 4rem;
   padding: 1rem 2rem;
   background-color: var(--clr-whitesmoke);
   border-radius: var(--radius);
 }
 
-.form__control {
-  margin: 0.5rem 0;
-  display: grid;
-  grid-template-columns: 100px 1fr;
-  align-items: center;
+.radio-buttons {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  text-align: center;
 }
 
-.form input {
-  background: var(--clr);
-  border-radius: var(--radius);
+input[type="radio"]  {
+  margin: 1rem;
+  transform: scale(2);
 }
 
-.form button {
+.svg--fruit {
+  background-image: url("../images/fruit.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    max-width: 3.3rem;
+    height: 3.3rem;
+    margin: 0 auto 1rem;
+    display: none;
+}
+
+.svg--veg {
+  background-image: url("../images/veg.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    max-width: 3.3rem;
+    height: 3.3rem;
+    margin: 0 auto 1rem;
+    display: none;
+}
+
+.svg--plant {
+  background-image: url("../images/plant.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    max-width: 3.3rem;
+    height: 3.3rem;
+    margin: 0 auto 1rem;
+    display: none;
+}
+
+
+.select-box {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  margin: 0 auto  1rem;
+  text-align: center;
+}
+
+.select-box label {
+ padding-top: 1rem;
+}
+
+select {
+  margin-left: 1rem;
+  height: 4rem;
+  padding-left: 2rem;
+  
+}
+
+form button {
   display: block;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 2rem auto 0 auto;
+}
+
+.output {
+  background-color: var(--clr-whitesmoke);
+}
+
+@media (min-width: 600px) {
+
+  .radio-buttons {
+    flex-direction: row;
+    justify-content: space-evenly;
+    max-width: 700px;
+  }
+
+  .radio-buttons label {
+    padding-top: .5rem;
+  }
+}
+
+@media (min-width: 992px) {
+
+  .select-box {
+    flex-direction: row;
+    justify-content: space-around;
+  }
 }

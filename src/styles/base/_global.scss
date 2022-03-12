@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,700;1,300&display=swap");
 
-* {
+*, *::before {
   box-sizing: border-box;
   font-family: "Ubuntu", sans-serif;
   font-size: 20px;
@@ -95,6 +95,8 @@ figcaption {
   background-color: var(--clr-mellowyellow);
   border-radius: var(--radius);
   box-shadow: var(--dark-shadow);
+  // generated with https://html-css-js.com/css/generator/gradient/
+  background: linear-gradient(to bottom, #FFE77A 0%, #FFE643 100%);
 }
 
 .sub-heading {
@@ -121,6 +123,7 @@ figcaption {
   color: var(--clr-whitesmoke);
   border: var(--btn-border);
   border-radius: var(--btn-radius);
+  cursor: pointer;
   transition: var(--transition);
   &:hover {
     background-color: var(--clr-btn-hover);
@@ -137,6 +140,7 @@ figcaption {
   max-width: 150px;
   border: var(--btn-border);
   border-radius: var(--btn-radius);
+  cursor: pointer;
   transition: var(--transition);
   &:hover {
     color: var(--clr-whitesmoke);
@@ -154,6 +158,7 @@ figcaption {
   border-radius: var(--radius);
   box-shadow: var(--light-shadow);
   text-align: center;
+  cursor: pointer;
   transition: var(--transition);
   &:hover {
     background-color: var(--clr-external-link-hover);

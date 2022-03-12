@@ -1,12 +1,22 @@
-# Acknowledgements
+# Quarantine Query
+
+Thank you for visiting this repository. This is a work in progress and something that I plan to keep as a long term project.
+
+## Purpose
+
+To provide direction to relevant Australian state quarantine laws and certifying authorities. This is to useful to businesses who intend to export interstate and travellers who are crossing borders or moving products or materials subject to biosecurity laws.
+
+## Acknowledgements
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+Some styling on shadows and gradients were done with help from <https://html-css-js.com/>
 
 ### Image sources
 
 SVG Australia state map from svg from <https://mapsvg.com/maps/australia>
 
-Other SVG images are from various open source sites
+Other SVG images are from various open source sites mainly <https://www.svgrepo.com/>
 
 All images sourced from wikimedia commons <https://commons.wikimedia.org/wiki/Main_Page>
 
@@ -28,4 +38,4 @@ Fruit fly on mango: Tsaag Valren, CC BY-SA 4.0 <https://creativecommons.org/lice
 
 Fruit fly disposal bin: Maksym Kozlenko, CC BY-SA 3.0 <https://creativecommons.org/licenses/by-sa/3.0>, via Wikimedia Commons
 
-U.S. Customs and Border Protection, Public domain, via Wikimedia Commons
+Inspector: U.S. Customs and Border Protection, Public domain, via Wikimedia Commons

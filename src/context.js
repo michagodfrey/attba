@@ -3,7 +3,7 @@ import React, { useState, useContext } from "react";
 const AppContext = React.createContext();
 
 const AppProvider = ({ children }) => {
-    // loading animation 
+    // loading animation, coming soon..
     // const [isloading, setIsLoading] = useState(true);
 
     // open and close the modals
