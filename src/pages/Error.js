@@ -4,11 +4,11 @@ import { Link } from 'react-router-dom';
 const Error = () => {
   return (
     <main>
-      <div className="container">
-        <h3 className="centered mb-2rem">
+      <div className="content">
+        <h3>
           Sorry, looks like that page doesn't exist
         </h3>
-        <Link to="/" className="btn">
+        <Link to="/home" className="btn--secondary">
           Back Home
         </Link>
       </div>

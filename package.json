@@ -1,7 +1,7 @@
 {
   "name": "attr",
   "version": "0.1.0",
-  "homepage": "https://michagodfrey.github.io/attba",
+  "homepage": "https://michagodfrey.github.io/home",
   "private": true,
   "dependencies": {
     "react": "^17.0.2",

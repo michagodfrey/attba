@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const Links = () => {
   return (
       <ul className="links">
-        <Link to="/">
+        <Link to="/home">
           <li className="link link--home">Home</li>
         </Link>
         <Link to="/regulations">
