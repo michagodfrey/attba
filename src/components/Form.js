@@ -1,6 +1,7 @@
-import React, { useState } from 'react';
-import conditions from "../data/conditions";
+import React, { useState, useEffect } from 'react';
 
+// not currently in use. But future versions will use a form to find specific conditons 
+// depending on commodity, origin and destination
 const Form = () => {
 
   const [commodity, setCommodity] = useState("");
@@ -13,6 +14,10 @@ const Form = () => {
     console.log(origin);
     console.log(destination);
   }
+
+  useEffect(() => {
+    console.log('this renders on mount');
+  }, [commodity])
 
   return (
     <div>
@@ -84,7 +89,7 @@ const Form = () => {
       </form>
       <div className="output">
         <p>
-          You intend to take {commodity} from {origin} to {destination}
+          You intend to take {commodity} from {origin} to {destination} 
         </p>
       </div>
     </div>

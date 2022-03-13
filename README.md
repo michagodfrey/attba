@@ -1,6 +1,6 @@
 # Quarantine Query
 
-Thank you for visiting this repository. This is a work in progress and something that I plan to keep as a long term project.
+Thank you for visiting this repository. It doesn't really do anything yet but it is a work in progress and something that I plan to keep as a long term project.
 
 ## Purpose
 

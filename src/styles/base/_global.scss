@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,700;1,300&display=swap");
 
-*, *::before {
+* {
   box-sizing: border-box;
   font-family: "Ubuntu", sans-serif;
   font-size: 20px;
@@ -100,7 +100,7 @@ figcaption {
 }
 
 .sub-heading {
-  background-color: var(--clr-mellowyellow);
+  background-color: var(--clr-whitesmoke);
   border-radius: var(--radius);
   box-shadow: var(--dark-shadow);
   display: flex;
@@ -153,6 +153,7 @@ figcaption {
   color: var(--clr-whitesmoke);
   font-size: x-large;
   width: 50%;
+  padding: .5rem;
   margin: auto;
   text-transform: capitalize;
   border-radius: var(--radius);

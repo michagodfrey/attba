@@ -1,7 +1,7 @@
-import React, { useEffect, useState } from 'react';
-import { Link, useParams } from "react-router-dom";
+import React from "react";
 import { ExternalLink } from "react-external-link";
 import pests from "../data/pests";
+import { useParams, Link } from "react-router-dom";
 
 const PestDetail = () => {
   const { id } = useParams();
@@ -10,9 +10,9 @@ const PestDetail = () => {
 
   pests.map((pest) => {
     if (pest.id === parseInt(id)) {
-      getPest = {...pest};
+      getPest = { ...pest };
     }
-  })
+  });
 
   return (
     <main>
@@ -53,7 +53,6 @@ const PestDetail = () => {
       </div>
     </main>
   );
-
 };
 
 export default PestDetail;

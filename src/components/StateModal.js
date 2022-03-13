@@ -2,9 +2,10 @@ import React from "react";
 import { useGlobalContext } from "../context";
 import { ExternalLink } from "react-external-link";
 
-const StateModal = ({ name, border, department, url }) => {
+const StateModal = (getState) => {
+  
   const { isStateModalOpen, closeStateModal } = useGlobalContext();
-
+  
   return (
     <div
       className={`${
@@ -12,11 +13,19 @@ const StateModal = ({ name, border, department, url }) => {
       }`}
     >
       <div className="modal-container">
-        <h1>{name}</h1>
-        <p>Border: {border}</p>
-        <ExternalLink href={url} className="external-link">
-          Biosecurity authority: {department}
-        </ExternalLink>
+        <h1>{getState.name}</h1>
+        <p>Border: {getState.border}</p>
+        <hr></hr>
+        <p>
+          <ExternalLink href={getState.url} className="external-link">
+            Biosecurity authority: {getState.department}
+          </ExternalLink>
+        </p>
+        <p>
+          <ExternalLink href={getState.pqm} className="external-link">
+            Quarantine Manual
+          </ExternalLink>
+        </p>
         <br></br>
         <button className="btn--secondary" onClick={closeStateModal}>
           Close

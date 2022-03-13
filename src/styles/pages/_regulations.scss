@@ -33,20 +33,6 @@
   grid-column: 2 / 4;
 }
 
-.states-container {
-  display: none;
-}
-
-@media (min-width: 600px) {
-  
-  .states-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 0 auto;
-  }
-}
-
 @media (min-width: 768px) {
 
   .regs-grid {

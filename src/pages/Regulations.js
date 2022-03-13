@@ -1,24 +1,11 @@
 import React from "react";
-import States from "../components/States";
-import StateModal from "../components/StateModal";
-import states from "../data/states";
-import { useGlobalContext } from "../context";
-import StatesList from "../components/StatesList";
+import steps from "../data/howTo";
+import HowTo from "../components/HowTo";
 
 const Regulations = () => {
-
-  const { modal } = useGlobalContext();
-  let getState = [];
-
-  states.map((state) => {
-    if (state.id === modal) {
-      return getState = { ...state };
-    }
-  });
   
   return (
     <main>
-      <StateModal {...getState} />
       <div className="content">
         <div className="text-container">
           <h2>Interstate biosecurity in Australia</h2>
@@ -58,10 +45,10 @@ const Regulations = () => {
                 alt="biosecurity professional looking through microscope"
               />
               <figcaption>
-                <strong> Biosecurity officer</strong> inspects fruit for signs of
-                pest damage or disease. Typical conditions for importing fresh
-                produce can include cerification (such as a permit to import)
-                and/or inspection by officials.
+                <strong> Biosecurity officer</strong> inspects fruit for signs
+                of pest damage or disease. Typical conditions for importing
+                fresh produce can include cerification (such as a permit to
+                import) and/or inspection by officials.
               </figcaption>
             </div>
             <p className="p-3">
@@ -98,21 +85,21 @@ const Regulations = () => {
           </div>
         </div>
         <div className="sub-heading">
-          <h3>State biosecurity authorities</h3>
           <p>
             <em>
               Thanks for checking out this project. I would love your feedback.
               This section will be expanded to include more information about
               the biosecurity departments with links to quarantine laws along
-              with step by step guidance to using these resources.
+              with step by step guidance to using these resources. The component
+              below will be redesigned as something more visually interesting.
             </em>
           </p>
         </div>
-        <div className="states-container">
-          <h4>click on a state to view more</h4>
-          <States />
+        <div>
+          {steps.map((step) => {
+            return <HowTo key={step.id} {...step} />;
+          })}
         </div>
-        <StatesList />
       </div>
     </main>
   );
