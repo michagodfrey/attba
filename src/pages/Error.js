@@ -8,7 +8,7 @@ const Error = () => {
         <h3>
           Sorry, looks like that page doesn't exist
         </h3>
-        <Link to="/home" className="btn--secondary">
+        <Link to="/attba" className="btn--secondary">
           Back Home
         </Link>
       </div>
